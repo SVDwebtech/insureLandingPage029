@@ -41,8 +41,5 @@ html {
 
 body {
 	box-sizing: border-box;
-
-	@include respond(tab-land) {
-	padding: 0 2rem;
-	}
+	padding: 0;
 }
