@@ -4,7 +4,7 @@
   "description": "Solution for Frontendmentor Insure Landing Page challenge",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "sass sass/main.scss css/styles.css -w"
   },
   "repository": {
     "type": "git",
