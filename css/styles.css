@@ -16,7 +16,7 @@ $breakpoint argument choices
 ORDER: base + typography > general layout + grid > page layout > components
 
 */
-@keyframes moveInLeft {
+@keyframes example {
   0% {
     opacity: 0;
     transform: translateX(-4.8rem);
@@ -29,35 +29,6 @@ ORDER: base + typography > general layout + grid > page layout > components
     transform: translateX(0);
   }
 }
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(4.8rem);
-  }
-  80% {
-    transform: translateX(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes rotateAndMoveInRight {
-  0% {
-    opacity: 0;
-    transform: translateY(-12rem) translateX(15rem) scale(1) rotateY(45deg);
-  }
-  25% {
-    opacity: 0;
-  }
-  65% {
-    transform: scale(0.4) rotateY(140deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0rem) translateX(0rem) scale(1) rotateY(360deg);
-  }
-}
 *,
 *::after,
 *::before {
@@ -68,11 +39,6 @@ ORDER: base + typography > general layout + grid > page layout > components
 
 html {
   scroll-behavior: smooth;
-  /* 	1rem is equal to 10px */
-  /* 	because 10px / 10 is equal to 1rem */
-  /* 	therefore 30px is equal to 3rem */
-  /* 	the default font size of the browser is 16px */
-  /* 	10px / 16px *100 = 62.5% */
   /* 	10px / 16px *100 = 62.5% */
   font-size: 62.5%;
 }
@@ -102,49 +68,24 @@ html {
 }
 
 body {
-  /* This makes dealing with the sizes of elements much easier, 
-  	and generally eliminates a number of pitfalls you can stumble on
-  	 while laying out your content. */
-  /* The width and height properties include the content, padding, and border, 
-  	but do not include the margin.  Note that padding and border will be inside 
-  	of the box. */
   box-sizing: border-box;
 }
 @media (min-width: 56.25em) {
   body {
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 2rem;
   }
 }
 
 body {
-  color: #c9c8c8;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+  color: hsl(270deg, 9%, 17%);
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
   line-height: 1.6;
 }
 
-.header {
-  max-width: 40rem;
-  margin: 0 auto;
-}
-.header__heading {
-  text-align: center;
-}
-.header .heading__primary--main {
-  font-size: 2.4rem;
-  font-weight: 900;
-}
-.header .heading__primary--subb {
-  font-size: 1.9rem;
-  font-weight: 700;
-}
-.header__paragraph {
-  text-align: center;
-}
-
-.paragraph {
-  font-size: 1.2rem;
-  font-weight: 400;
+.heading {
+  font-family: "DM Serif Display", serif;
 }
 
 .u-center-text {
@@ -191,18 +132,6 @@ body {
   margin-top: 7rem;
 }
 
-.subsection-wrapper-header {
-  padding: 4rem 5rem 0rem 5rem;
-}
-
-.subsection-wrapper-about {
-  padding: 0 5rem 5rem 5rem;
-}
-
-.subsection-wrapper-contact {
-  padding: 0 5rem 5rem 5rem;
-}
-
 .btn, .btn:link, .btn:visited {
   display: inline-block;
   color: inherit;
@@ -242,18 +171,8 @@ body {
   min-height: 96vh;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: linear-gradient(0.55turn, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.88) 75%, rgb(0, 0, 0) 98%), url(/img/bgHeaderImage.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 2rem;
-}
-.header__heading .heading__primary--main, .header__heading .heading__primary--sub {
-  display: block;
+.content {
+  background-color: aliceblue;
 }
 
 /*# sourceMappingURL=styles.css.map */
