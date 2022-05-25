@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SVDwebtech/insureLandingPage029/issues"
   },
-  "homepage": "https://github.com/SVDwebtech/insureLandingPage029#readme"
+  "homepage": "https://github.com/SVDwebtech/insureLandingPage029#readme",
+  "devDependencies": {
+    "sass": "^1.52.1"
+  }
 }
