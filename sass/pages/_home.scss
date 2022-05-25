@@ -7,4 +7,19 @@
 	&__navbar {
 		padding: 2rem;
 	}
+
+	&__image-container {
+		width: min(37.5rem, 100%);
+	}
+
+	&__hero-image {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+
+	}
+
+	&__content-container {
+		width: min(37.5rem, 100%);
+	}
 }
