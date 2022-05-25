@@ -1,0 +1,19 @@
+{
+  "name": "insurelandingpage029",
+  "version": "1.0.0",
+  "description": "Solution for Frontendmentor Insure Landing Page challenge",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SVDwebtech/insureLandingPage029.git"
+  },
+  "author": "Schalk van Dyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SVDwebtech/insureLandingPage029/issues"
+  },
+  "homepage": "https://github.com/SVDwebtech/insureLandingPage029#readme"
+}
