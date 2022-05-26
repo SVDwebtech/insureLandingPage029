@@ -45,7 +45,7 @@
 	&__content-container::before {
 		
 		content: "";		
-		background-image: url("../../images/bg-pattern-intro-left-mobile.svg");
+		background-image: url("../images/bg-pattern-intro-left-mobile.svg");
 		background-color: $color-primary-darkViolet;
 		background-repeat: no-repeat;
 		background-size: 50%;
@@ -64,7 +64,7 @@
 	&__content-container::after {
 		
 		content: "";
-		background-image: url("../../images/bg-pattern-intro-right-mobile.svg");
+		background-image: url("../images/bg-pattern-intro-right-mobile.svg");
 		background-repeat: no-repeat;
 		background-size: 33%;
 		background-position: right 37rem;
