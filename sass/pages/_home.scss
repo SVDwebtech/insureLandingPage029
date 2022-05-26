@@ -25,17 +25,12 @@
 		justify-content: center;
 		align-items: center;
 
-		background-image: url("../../images/bg-pattern-intro-left-mobile.svg"), url("../../images/bg-pattern-intro-right-mobile.svg");
-		background-repeat: no-repeat;
-		background-size: 50%, 35%;
-		background-position: left top, right 37rem;
-		background-color: $color-primary-darkViolet;
-	
-		
 		width: min(37.5rem, 100%);
 		height: min(140vw, 52.5rem);
 
 		padding: 0 3rem;
+
+		position: relative;
 
 		h1 {
 			padding-bottom: 2rem;
@@ -45,6 +40,46 @@
 			padding: 0 .5rem;
 			padding-bottom: 3rem;
 		}
-
 	}
+
+	&__content-container::before {
+		
+		content: "";		
+		background-image: url("../../images/bg-pattern-intro-left-mobile.svg");
+		background-color: $color-primary-darkViolet;
+		background-repeat: no-repeat;
+		background-size: 50%;
+		background-position: left top;
+		
+		width: min(37.5rem, 100%);
+		height: min(140vw, 52.5rem);
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: -10;
+	}
+
+	&__content-container::after {
+		
+		content: "";
+		background-image: url("../../images/bg-pattern-intro-right-mobile.svg");
+		background-repeat: no-repeat;
+		background-size: 33%;
+		background-position: right 37rem;
+		
+		width: min(37.5rem, 100%);
+		height: min(100rem);
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+	}
+}
+
+.main {
+	margin-top: 10rem;
 }
