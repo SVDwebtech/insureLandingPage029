@@ -16,10 +16,35 @@
 		display: block;
 		width: 100%;
 		margin: 0 auto;
-
 	}
 
 	&__content-container {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		background-image: url("../../images/bg-pattern-intro-left-mobile.svg"), url("../../images/bg-pattern-intro-right-mobile.svg");
+		background-repeat: no-repeat;
+		background-size: 50%, 35%;
+		background-position: left top, right 37rem;
+		background-color: $color-primary-darkViolet;
+	
+		
 		width: min(37.5rem, 100%);
+		height: min(140vw, 52.5rem);
+
+		padding: 0 3rem;
+
+		h1 {
+			padding-bottom: 2rem;
+		}
+
+		p {
+			padding: 0 .5rem;
+			padding-bottom: 2rem;
+		}
+
 	}
 }
