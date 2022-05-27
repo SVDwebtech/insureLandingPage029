@@ -6,12 +6,6 @@ body {
 	line-height: 1.6;
 }
 
-.header__content-container {
-	color: $color-secondary-veryLightGray;
-	text-align: center;
-}
-
-
 .headingH1 {
 	font-family: 'DM Serif Display', serif;
 	font-size: 4.5rem;
@@ -23,6 +17,7 @@ body {
 	font-family: 'DM Serif Display', serif;
 	font-size: 4.5rem;
 	font-weight: 700;
+	line-height: 1;
 }
 
 .headingH3 {
@@ -46,9 +41,21 @@ body {
 
 }
 
-.header {
-
+.header__content-container {
+	color: $color-secondary-veryLightGray;
+	text-align: center;
 }
+
+.main__companyWorkProcess {
+	color: $color-secondary-veryLightGray;
+	text-align: center;
+
+	h2 {
+		font-size: 4rem;
+		font-weight: 400;
+	}
+}
+
 
 .footer {
 
