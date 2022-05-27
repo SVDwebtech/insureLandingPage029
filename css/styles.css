@@ -219,7 +219,7 @@ body {
 }
 
 .header {
-  width: 37.5rem;
+  min-width: 37.5rem;
   margin: 0 auto;
 }
 .header__navbar {
@@ -281,7 +281,7 @@ body {
   margin-top: 13rem;
 }
 .main__companyQualitiesSection {
-  width: 375px;
+  min-width: 375px;
   margin: 0 auto;
 }
 .main__companyQualitiesSection hr {
@@ -297,7 +297,7 @@ body {
   background-repeat: no-repeat;
   background-size: 45%;
   background-position: right top;
-  width: 375px;
+  min-width: 375px;
   padding: 7rem 2rem;
   margin: 0 auto;
   margin-top: 15rem;
@@ -306,7 +306,7 @@ body {
   margin-bottom: 4rem;
 }
 .footer {
-  width: 37.5rem;
+  min-width: 37.5rem;
   margin: 0 auto;
   margin-top: 13rem;
 }

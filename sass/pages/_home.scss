@@ -1,6 +1,6 @@
 .header {
 	
-	width: 37.5rem;
+	min-width: 37.5rem;
 	margin: 0 auto;
 	
 	&__navbar {
@@ -84,7 +84,7 @@
 
 	&__companyQualitiesSection {
 		
-		width: 375px;
+		min-width: 375px;
 		margin: 0 auto;
 
 		hr {
@@ -105,7 +105,7 @@
 		background-size: 45%;
 		background-position: right top;
 		
-		width: 375px;
+		min-width: 375px;
 		padding: 7rem 2rem;
 		margin: 0 auto;
 		margin-top: 15rem;
@@ -123,7 +123,7 @@
 
 .footer {
 	
-	width: 37.5rem;
+	min-width: 37.5rem;
 	margin: 0 auto;
 	margin-top: 13rem;
 
