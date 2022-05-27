@@ -1,20 +1,20 @@
 .header {
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	
+	width: 37.5rem;
+	margin: 0 auto;
 	
 	&__navbar {
 		padding: 2rem;
 	}
 
 	&__image-container {
-		width: min(37.5rem, 100%);
+
 	}
 
 	&__hero-image {
 		display: block;
 		width: 100%;
+		height: auto;
 		margin: 0 auto;
 	}
 
@@ -25,10 +25,7 @@
 		justify-content: center;
 		align-items: center;
 
-		width: min(37.5rem, 100%);
-		height: min(140vw, 52.5rem);
-
-		padding: 0 3rem;
+		padding: 9rem 3rem;
 
 		position: relative;
 
@@ -48,11 +45,11 @@
 		background-image: url("../images/bg-pattern-intro-left-mobile.svg");
 		background-color: $color-primary-darkViolet;
 		background-repeat: no-repeat;
-		background-size: 50%;
+		background-size: 45%;
 		background-position: left top;
 		
-		width: min(37.5rem, 100%);
-		height: min(140vw, 52.5rem);
+		width: 100%;
+		height: 100%;
 
 		position: absolute;
 		top: 0;
@@ -69,8 +66,10 @@
 		background-size: 33%;
 		background-position: right 37rem;
 		
-		width: min(37.5rem, 100%);
-		height: min(100rem);
+		// width: min(37.5rem, 100%);
+		// height: min(100rem);
+		width: 100%;
+		height: 100rem;
 
 		position: absolute;
 		top: 0;
