@@ -37,7 +37,7 @@
 		}
 
 		p {
-			padding: 0 .5rem;
+			padding: 0 .6rem;
 			padding-bottom: 3rem;
 		}
 	}
@@ -81,5 +81,24 @@
 }
 
 .main {
-	margin-top: 10rem;
+
+	text-align: center;
+	margin-top: 13rem;
+
+	&__companyQualitiesSection {
+		
+		width: 375px;
+		margin: 0 auto;
+
+		hr {
+			width: 17rem;
+			margin: 0 auto;
+		}
+	
+		h2 {
+			margin: 5rem 0 6rem;
+		}
+	}
+
+	
 }

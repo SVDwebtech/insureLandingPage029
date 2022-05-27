@@ -93,6 +93,18 @@ body {
   line-height: 1;
 }
 
+.headingH2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.headingH3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .btn {
   color: inherit;
   letter-spacing: 2px;
@@ -160,6 +172,19 @@ body {
   padding: 1em 2em;
 }
 
+.card {
+  width: 375px;
+  padding: 0 3.5rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.card__image {
+  margin-bottom: 2rem;
+}
+.card__heading {
+  margin-bottom: 1.5rem;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -201,7 +226,7 @@ body {
   padding-bottom: 2rem;
 }
 .header__content-container p {
-  padding: 0 0.5rem;
+  padding: 0 0.6rem;
   padding-bottom: 3rem;
 }
 .header__content-container::before {
@@ -235,7 +260,19 @@ body {
 }
 
 .main {
-  margin-top: 10rem;
+  text-align: center;
+  margin-top: 13rem;
+}
+.main__companyQualitiesSection {
+  width: 375px;
+  margin: 0 auto;
+}
+.main__companyQualitiesSection hr {
+  width: 17rem;
+  margin: 0 auto;
+}
+.main__companyQualitiesSection h2 {
+  margin: 5rem 0 6rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
