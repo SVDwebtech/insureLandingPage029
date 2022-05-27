@@ -73,6 +73,10 @@ body {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   color: hsl(270deg, 9%, 17%);
   font-family: "Karla", sans-serif;
@@ -95,12 +99,6 @@ body {
   line-height: 1;
 }
 
-.headingH3 {
-  font-family: "DM Serif Display", serif;
-  font-size: 3rem;
-  font-weight: 700;
-}
-
 .btn {
   color: inherit;
   letter-spacing: 2px;
@@ -120,6 +118,21 @@ body {
 .main__companyWorkProcess h2 {
   font-size: 4rem;
   font-weight: 400;
+}
+
+.footer {
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer h3 {
+  color: hsl(273deg, 4%, 51%);
+  font-size: 1.5rem;
+}
+.footer li {
+  color: hsl(256deg, 26%, 20%);
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 .u-center-text {
@@ -284,7 +297,6 @@ body {
   background-repeat: no-repeat;
   background-size: 45%;
   background-position: right top;
-  background-color: hsl(256deg, 26%, 20%);
   width: 375px;
   padding: 7rem 2rem;
   margin: 0 auto;
@@ -292,6 +304,37 @@ body {
 }
 .main__companyWorkProcess h2 {
   margin-bottom: 4rem;
+}
+.footer {
+  width: 37.5rem;
+  margin: 0 auto;
+  margin-top: 13rem;
+}
+.footer__brandAndMedia-container {
+  background-image: url("../images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right top;
+  padding-top: 10rem;
+}
+.footer__brand, .footer__social-media {
+  margin-bottom: 2rem;
+}
+.footer__social-media-icon {
+  margin: 0 0.7rem;
+}
+.footer hr {
+  width: 60%;
+  margin: 0 auto 2rem;
+}
+.footer__section-container {
+  margin-bottom: 4rem;
+}
+.footer h3 {
+  margin-bottom: 1rem;
+}
+.footer li {
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

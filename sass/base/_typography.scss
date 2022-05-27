@@ -20,11 +20,11 @@ body {
 	line-height: 1;
 }
 
-.headingH3 {
-	font-family: 'DM Serif Display', serif;
-	font-size: 3rem;
-	font-weight: 700;
-}
+// .headingH3 {
+// 	font-family: 'DM Serif Display', serif;
+// 	font-size: 3rem;
+// 	font-weight: 700;
+// }
 
 .paragraph {
 	
@@ -58,5 +58,22 @@ body {
 
 
 .footer {
+	
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	// h3, li {
+	// 	font-size: 1.3rem;
+	// }
 
+	h3 {
+		color: $color-secondary-darkGrayishViolet;
+		font-size: 1.5rem;
+	}
+
+	li {
+		color: $color-primary-darkViolet;
+		font-size: 1.4rem;
+		font-weight: 700;
+	}
 }

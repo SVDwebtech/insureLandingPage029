@@ -104,7 +104,6 @@
 		background-repeat: no-repeat;
 		background-size: 45%;
 		background-position: right top;
-		background-color: $color-primary-darkViolet;
 		
 		width: 375px;
 		padding: 7rem 2rem;
@@ -119,6 +118,50 @@
 		
 		}
 	}
+}
 
+
+.footer {
 	
+	width: 37.5rem;
+	margin: 0 auto;
+	margin-top: 13rem;
+
+	&__brandAndMedia-container {
+		
+		background-image: url("../images/bg-pattern-footer-mobile.svg");
+		//background-color: $color-secondary-darkGrayishViolet;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: right top;
+		
+		padding-top: 10rem;
+	}
+
+	&__brand, &__social-media {
+	
+		margin-bottom: 2rem;
+	}
+
+	&__social-media-icon {
+
+		margin: 0 .7rem;
+	}
+
+	hr {
+		width: 60%;
+		margin: 0 auto 2rem;
+	}
+
+	&__section-container {
+		margin-bottom: 4rem;
+	}
+
+	h3 {
+		margin-bottom: 1rem;
+	}
+
+	li {
+		margin-bottom: .5rem;
+	}
 }
