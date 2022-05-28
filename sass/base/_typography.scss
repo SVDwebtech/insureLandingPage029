@@ -11,6 +11,10 @@ body {
 	font-size: 4.5rem;
 	font-weight: 400;
 	line-height: 1;
+
+	@include respond(tab-port) {
+		font-size: clamp(3.15rem, 6vw, 4.5rem);
+	}
 }
 
 .headingH2 {
@@ -44,6 +48,10 @@ body {
 .header__content-container {
 	color: $color-secondary-veryLightGray;
 	text-align: center;
+
+	@include respond(tab-port) {
+		text-align: start;
+	}
 }
 
 .main__companyWorkProcess {
