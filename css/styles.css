@@ -96,6 +96,11 @@ body {
     font-size: clamp(3.15rem, 6vw, 4.5rem);
   }
 }
+@media (min-width: 56.25em) {
+  .headingH1 {
+    font-size: 3.5rem;
+  }
+}
 
 .headingH2 {
   font-family: "DM Serif Display", serif;
@@ -110,6 +115,11 @@ body {
   text-transform: uppercase;
   font-weight: 100;
 }
+@media (min-width: 56.25em) {
+  .btn {
+    font-size: clamp(0.8rem, 1.2vw, 1.8rem);
+  }
+}
 
 .header__content-container {
   color: hsl(0deg, 0%, 98%);
@@ -118,6 +128,11 @@ body {
 @media (min-width: 37.5em) {
   .header__content-container {
     text-align: start;
+  }
+}
+@media (min-width: 56.25em) {
+  .header__content-container p {
+    font-size: clamp(1rem, 1.5vw, 2rem);
   }
 }
 
@@ -319,6 +334,27 @@ body {
     background-size: 15%;
     width: 100%;
     height: 100rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .header__image-container {
+    width: 27rem;
+    position: absolute;
+    top: 12rem;
+    right: 7rem;
+  }
+  .header__hero-image {
+    height: 150%;
+  }
+  .header__content-container {
+    padding: 5rem 35rem 5rem 7rem;
+  }
+  .header h1 {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
+  .header p {
+    padding-bottom: 2rem;
   }
 }
 

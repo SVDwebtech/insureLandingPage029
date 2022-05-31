@@ -118,7 +118,7 @@
 		
 		width: 100%;
 		height: 100%;
-	}
+		}
 
 	&__content-container::after {
 		
@@ -126,7 +126,38 @@
 				
 		width: 100%;
 		height: 100rem;
+		}
 	}
+
+	@include respond(tab-land) {
+	
+		&__image-container {
+
+			width: 27rem;
+
+			position: absolute;
+			top: 12rem;
+			right: 7rem;
+		}
+
+		&__hero-image {
+		
+			height: 150%;
+		}
+		
+		&__content-container {
+
+			padding: 5rem 35rem 5rem 7rem;
+		}
+
+		h1 {
+			padding-top: 5rem;
+			padding-bottom: 1rem;
+		}
+
+		p {
+			padding-bottom: 2rem;
+		}
 	}
 }
 
