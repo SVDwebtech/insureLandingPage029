@@ -98,7 +98,12 @@ body {
 }
 @media (min-width: 56.25em) {
   .headingH1 {
-    font-size: 3.5rem;
+    font-size: clamp(3rem, 4.5vw, 4.8rem);
+  }
+}
+@media (min-width: 75em) {
+  .headingH1 {
+    font-size: clamp(3rem, 4.5vw, 4.8rem);
   }
 }
 
@@ -120,6 +125,11 @@ body {
     font-size: clamp(0.8rem, 1.2vw, 1.8rem);
   }
 }
+@media (min-width: 75em) {
+  .btn {
+    font-size: clamp(0.8rem, 1vw, 1.1rem);
+  }
+}
 
 .header__content-container {
   color: hsl(0deg, 0%, 98%);
@@ -132,7 +142,12 @@ body {
 }
 @media (min-width: 56.25em) {
   .header__content-container p {
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(1.1rem, 1.15vw, 1.4rem);
+  }
+}
+@media (min-width: 75em) {
+  .header__content-container p {
+    font-size: clamp(1.1rem, 1.15vw, 1.4rem);
   }
 }
 
@@ -338,7 +353,7 @@ body {
 }
 @media (min-width: 56.25em) {
   .header__image-container {
-    width: 27rem;
+    width: 40%;
     position: absolute;
     top: 12rem;
     right: 7rem;
@@ -347,11 +362,48 @@ body {
     height: 150%;
   }
   .header__content-container {
-    padding: 5rem 35rem 5rem 7rem;
+    padding: 7vw 53% 7vw 7rem;
   }
   .header h1 {
     padding-top: 5rem;
     padding-bottom: 1rem;
+  }
+  .header p {
+    padding-bottom: 2rem;
+  }
+}
+@media (min-width: 75em) {
+  .header__image-container {
+    width: 40%;
+    position: absolute;
+    top: 14rem;
+    right: 10rem;
+  }
+  .header__hero-image {
+    height: 150%;
+  }
+  .header__content-container {
+    background-color: hsl(256deg, 26%, 20%);
+    padding: 7vw 53% 10vw 10rem;
+  }
+  .header__content-container::before {
+    background-image: url("../images/bg-pattern-intro-left-desktop.svg");
+    background-color: transparent;
+    background-position: 0 28rem;
+    background-size: 12%;
+    z-index: 20;
+    height: 60rem;
+  }
+  .header__content-container::after {
+    background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+    background-position: 71vw -5rem;
+    background-size: 30%;
+    z-index: 20;
+  }
+  .header h1 {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
   }
   .header p {
     padding-bottom: 2rem;
