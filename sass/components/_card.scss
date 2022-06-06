@@ -12,4 +12,19 @@
     &__heading {
         margin-bottom: 1.5rem;
     }
+
+    @include respond(tab-land) {
+
+        padding: 0 2.6rem 0 0;
+        margin-left: 0;
+
+        &__image {
+            // width: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &__heading {
+            margin-bottom: 1rem;
+        }
+    }
 }

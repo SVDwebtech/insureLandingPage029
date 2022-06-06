@@ -114,6 +114,12 @@ body {
   line-height: 1;
 }
 
+.headingH3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .btn {
   color: inherit;
   letter-spacing: 2px;
@@ -148,6 +154,22 @@ body {
 @media (min-width: 75em) {
   .header__content-container p {
     font-size: clamp(1.1rem, 1.15vw, 1.4rem);
+  }
+}
+
+@media (min-width: 56.25em) {
+  .main__companyQualitiesSection {
+    text-align: start;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .card__heading {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  .card__paragraph {
+    font-size: 1.15rem;
   }
 }
 
@@ -247,15 +269,23 @@ body {
 .card__heading {
   margin-bottom: 1.5rem;
 }
+@media (min-width: 56.25em) {
+  .card {
+    padding: 0 2.6rem 0 0;
+    margin-left: 0;
+  }
+  .card__image {
+    margin-bottom: 1.5rem;
+  }
+  .card__heading {
+    margin-bottom: 1rem;
+  }
+}
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.header {
-  min-height: 96vh;
 }
 
 .header {
@@ -414,6 +444,11 @@ body {
   text-align: center;
   margin-top: 13rem;
 }
+@media (min-width: 56.25em) {
+  .main {
+    margin-top: 20vw;
+  }
+}
 .main__companyQualitiesSection {
   min-width: 375px;
   margin: 0 auto;
@@ -424,6 +459,23 @@ body {
 }
 .main__companyQualitiesSection h2 {
   margin: 5rem 0 6rem;
+}
+@media (min-width: 56.25em) {
+  .main__companyQualitiesSection {
+    padding-left: 7rem;
+  }
+  .main__companyQualitiesSection hr {
+    width: 17rem;
+    margin: 0 auto 0 0;
+  }
+  .main__companyQualitiesSection--cards-container {
+    display: flex;
+  }
+}
+@media (min-width: 112.5em) {
+  .main__companyQualitiesSection--cards-container {
+    max-width: 1600px;
+  }
 }
 .main__companyWorkProcess {
   background-image: url("../images/bg-pattern-how-we-work-mobile.svg");

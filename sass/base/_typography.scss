@@ -35,11 +35,11 @@ body {
 	line-height: 1;
 }
 
-// .headingH3 {
-// 	font-family: 'DM Serif Display', serif;
-// 	font-size: 3rem;
-// 	font-weight: 700;
-// }
+.headingH3 {
+	font-family: 'DM Serif Display', serif;
+	font-size: 3rem;
+	font-weight: 700;
+}
 
 .paragraph {
 	
@@ -92,6 +92,29 @@ body {
 		
 		p {
 			font-size: clamp(1.1rem, 1.15vw, 1.4rem);
+		}
+	}
+}
+
+.main__companyQualitiesSection {
+	
+	@include respond(tab-land) {
+
+		text-align: start;
+	}
+}
+
+.card {
+
+	@include respond(tab-land) {
+
+		&__heading {
+        	font-size: 1.8rem;
+			font-weight: 400;
+    	}
+
+		&__paragraph {
+			font-size: 1.15rem;
 		}
 	}
 }
