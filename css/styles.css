@@ -427,7 +427,22 @@ body {
     height: 150%;
   }
   .header__content-container {
+    background-color: hsl(256deg, 26%, 20%);
     padding: 7vw 53% 7vw 7rem;
+  }
+  .header__content-container::before {
+    background-image: url("../images/bg-pattern-intro-left-desktop.svg");
+    background-color: transparent;
+    background-position: 0 28rem;
+    background-size: 12%;
+    z-index: 20;
+    height: 60rem;
+  }
+  .header__content-container::after {
+    background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+    background-position: 71vw -5rem;
+    background-size: 30%;
+    z-index: 20;
   }
   .header h1 {
     padding-top: 5rem;
@@ -450,20 +465,6 @@ body {
   .header__content-container {
     background-color: hsl(256deg, 26%, 20%);
     padding: 7vw 53% 10vw 10rem;
-  }
-  .header__content-container::before {
-    background-image: url("../images/bg-pattern-intro-left-desktop.svg");
-    background-color: transparent;
-    background-position: 0 28rem;
-    background-size: 12%;
-    z-index: 20;
-    height: 60rem;
-  }
-  .header__content-container::after {
-    background-image: url("../images/bg-pattern-intro-right-desktop.svg");
-    background-position: 71vw -5rem;
-    background-size: 30%;
-    z-index: 20;
   }
   .header h1 {
     padding-top: 4rem;
@@ -558,16 +559,56 @@ body {
 }
 
 .footer {
+  background-color: rgb(255, 255, 255);
   min-width: 37.5rem;
   margin: 0 auto;
   margin-top: 13rem;
+  position: relative;
+}
+@media (min-width: 56.25em) {
+  .footer {
+    padding: 0 7rem;
+  }
+}
+@media (min-width: 75em) {
+  .footer {
+    padding: 0 10rem;
+  }
 }
 .footer__brandAndMedia-container {
   background-image: url("../images/bg-pattern-footer-mobile.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: right top;
-  padding-top: 10rem;
+  background-size: 80%;
+  background-position: left top;
+  padding-top: 4rem;
+}
+@media (min-width: 56.25em) {
+  .footer__brandAndMedia-container {
+    background-image: none;
+  }
+}
+@media (min-width: 56.25em) {
+  .footer__brandAndMedia-container::before {
+    content: "";
+    background-image: url("../images/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: left top;
+    width: 100%;
+    height: 100%;
+    padding-top: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+}
+@media (min-width: 56.25em) {
+  .footer__brandAndMedia-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .footer__brand, .footer__social-media {
   margin-bottom: 2rem;
@@ -577,7 +618,19 @@ body {
 }
 .footer hr {
   width: 60%;
-  margin: 0 auto 2rem;
+  margin: 2rem auto;
+}
+@media (min-width: 56.25em) {
+  .footer hr {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .footer__sections-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .footer__section-container {
   margin-bottom: 4rem;
