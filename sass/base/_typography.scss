@@ -45,7 +45,7 @@ body {
 	
 } 
 
-.btn {
+.btn--view-plans {
  	color: inherit;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -57,6 +57,25 @@ body {
 
 	@include respond(desk) {
 		font-size: clamp(.8rem, 1vw, 1.1rem);
+	}
+}
+
+.btn--how-we-work {
+ 	color: inherit;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 100;
+
+	@include respond(tab-land) {
+		font-size: clamp(1rem, 1.3vw, 2rem);
+	}
+
+	@include respond(desk) {
+		font-size: clamp(1.1rem, 1vw, 2.1rem);
+	}
+
+	@include respond(big-desk) {
+		font-size: max(1.3rem);
 	}
 }
 
@@ -126,6 +145,13 @@ body {
 	h2 {
 		font-size: 4rem;
 		font-weight: 400;
+		margin-bottom: 0;
+
+		@include respond(tab-land) {
+		
+			text-align: start;
+			font-size: clamp(3rem, 3.8vw, 4.5rem);
+		}
 	}
 }
 
